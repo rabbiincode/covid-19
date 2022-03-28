@@ -1,0 +1,61 @@
+.today{
+ margin: 0 3rem;
+ color: #000;
+ font-weight: 700;
+}
+
+ caption {
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+  margin-bottom: 0.3rem;
+}
+
+.today table {
+ border-collapse: collapse;
+}
+
+ .today th, .today td {
+  border: 1px solid #000;
+  width: 25%;
+}
+
+ .today td{
+  padding: 0.5rem;
+ }
+
+ .img{
+  width: 6rem;
+  height: 3rem;
+ }
+
+ #one{
+  background-color: yellow;
+ }
+
+ #two{
+  background-color: green;
+ }
+
+ #three{
+  background-color: red;
+ }
+
+ @media (min-width: 550px) and (max-width: 950px) {
+  .today{
+   margin: 0 15rem;
+  }
+ }
+
+ @media (min-width: 500px) and (max-width: 550px) {
+  .today{
+   margin: 0 8rem;
+  }
+ }
+
+
+ @media (max-width: 300px) {
+  .today{
+   margin: 0 auto;
+  }
+ }
