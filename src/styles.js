@@ -18,7 +18,7 @@ export default makeStyles((theme) => ({
   },
   cases: {
     background: 'lightgrey',
-    color: 'black'
+    color: 'black',
   },
   header: {
     width: '400',
