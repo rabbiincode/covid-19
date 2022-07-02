@@ -16,18 +16,20 @@ const App = () => {
  const [data, setData] = useState({})
  const [tableData, setTableData] = useState([])
 
+ // eslint-disable-next-line react-hooks/exhaustive-deps
  useEffect( async () => {
    const fetch = await fetchData()
    setData(fetch)
  }, [])
  console.log(data);
 
- const handleCountryChange = async(country) => {              //method
+ const handleCountryChange = async(country) => {   //method
    const fetchedData = await fetchData(country)
    setData(fetchedData)
    console.log(fetchedData);
  }
 
+ // eslint-disable-next-line react-hooks/exhaustive-deps
  useEffect( async () => {
    const fetchApi = await fetchCountries()
    const sortedData = sortData(fetchApi)
